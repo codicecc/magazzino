@@ -1,0 +1,24 @@
+/** Francesco Dattolo - gnucms.org - 1603180622 **/
+.uppercase{text-transform: uppercase;}
+input.mycheckbox[type="checkbox"] {float: none;width: 3rem;}
+@media screen {
+	.print{display:none;}
+}
+@media print {
+.noprint{display:none;}
+}
+.zxing{width:12rem;height:auto;}
+.tools .btn{height:10rem;}
+.tools a.btn{}
+
+:target {
+content:"";
+border:2px dotted blue;
+width:100%;
+}
+
+#verificacodici{display:none;}
+
+/*
+.anchor { padding-top: 90px; }
+*/

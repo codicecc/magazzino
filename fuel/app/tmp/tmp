@@ -1,0 +1,3 @@
+ Auth::create_user('francesco', 'Lecce27', 'info@francescodattolo.it', 100);
+ 
+ 
