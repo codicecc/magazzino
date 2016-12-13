@@ -41,7 +41,7 @@ class Controller_Admin_Quantities extends Controller_Admin_Codes{
 		$data = DB::query($query)
 			->execute()
 			->as_array();
-		
+					
 		$data = Format::forge($data)->to_csv(null, ";", false, array('Magazzino', 'Codice', 'Quantità'));
 		
 		$response = new Response($data,200);

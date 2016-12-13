@@ -145,7 +145,8 @@ return array(
 			),
 			'Controller_Admin_Tools' => array(
 				'index',
-				'mageCheck_ecommerce_magazzino'
+				'mageCheck_ecommerce_magazzino',
+				'getcsv',
 			),
 			'Controller_Admin_Codesource' => array(
 				'index',

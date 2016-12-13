@@ -97,7 +97,8 @@ class Controller_Admin_Scans extends Controller_Admin
 					$ecommerce_update=0;
 					if(Model_Code::find($scan->code->id)->store['id']==2){
 							$ecommerce_update=1;
-							Mymage::mageChangeQty(utilities::standardize2($scan->code->code), quantities::quantity_by_code($scan->code_id));
+							
+							Mymage::mageChangeQty(Codes::getNewCode(Utilities::standardize2($scan->code->code)), quantities::quantity_by_code($scan->code_id));
 					}
 					
 					$element=($scan->quantity>1)?"elementi":"elemento";

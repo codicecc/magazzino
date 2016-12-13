@@ -98,7 +98,7 @@ class Controller_Admin extends Controller_Base
 	public function action_index(){
 		$this->template->title = 'Scrivania';
 		$admin_view='admin/dashboard';
-		if(Auth::get('group')==3)$admin_view='admin/partners_dashbord';
+		
 		$this->template->content = View::forge($admin_view);
 	}
 

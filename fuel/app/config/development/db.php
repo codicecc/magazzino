@@ -6,9 +6,9 @@
 return array(
 	'default' => array(
 		'connection'  => array(
-			'dsn'        => 'mysql:host=localhost;dbname=magazzino2',
-			'username'   => 'magazzino2',
-			'password'   => 'magazzino2',
+			'dsn'        => 'mysql:host=localhost;dbname=c23magazzino',
+			'username'   => 'c23euroteck',
+			'password'   => 'nI2M9RIJS46R',
 		),
 		//'profiling'  => true,
 	),

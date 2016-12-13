@@ -2,7 +2,7 @@
 class Codes{
 	static function checkCode($code){
 		if(strlen($code)<5){
-			if(strtolower(substr($code,0,1)=="E"||strtolower(substr($code,0,1)=="C"))){
+			if(strtolower(substr($code,0,1))=="e"||strtolower(substr($code,0,1))=="c"){
 					return true;
 			}
 		}

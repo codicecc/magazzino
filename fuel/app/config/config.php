@@ -11,6 +11,18 @@
  */
 
 return array(
+	
+	/**
+	** 1612071756 - Francesco Dattolo - gnucms
+	**/
+	'ecommerceDatabase'=>array(
+		'host'=>'localhost',
+		'db'=>'demax',
+		'user'=>'demax',
+		'password'=>'Agenda2016',
+		'magento_path'=>'/home/magazzinodemax/private/tools/ecommerce/app/Mage.php',
+		'script_path'=>'/home/magazzinodemax/private/tools/scripts/',
+	),
 
 	/**
 	 * base_url - The base URL of the application.

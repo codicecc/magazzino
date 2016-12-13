@@ -1,5 +1,9 @@
 <h2><?php echo $subtitle;?></h2>
-<br>
+		<p>
+<?php if(Auth::has_access(Request::active()->controller.'.getcsv')):?>		
+	<a class="btn btn-primary btn-lg" href="/admin/tools/getcsv/<?php echo($mc);?>">Scarica il file CSV</a>
+<?php endif;?>
+		</p>
 <?php
 
 ?>
@@ -7,7 +11,7 @@
 <table class="table table-striped">
 	<thead>
 		<tr>
-			<th>Codice Ecommerce <?php if($mc==1)echo"| <a href=\"/admin/tools/mage_sync_ecommerce_zero_qty/\">Azzera Quantità di questi codici";?></th>
+			<th>Codice Ecommerce <?php if($mc==1&&Auth::has_access(Request::active()->controller.'.mage_sync_ecommerce_zero_qty'))echo"| <a href=\"/admin/tools/mage_sync_ecommerce_zero_qty/\">Azzera Quantità di questi codici";?></th>
 		</tr>
 	</thead>
 	<tbody>
